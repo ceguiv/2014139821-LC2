@@ -10,5 +10,14 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class PlanConfiguration : EntityTypeConfiguration<Plan>
     {
+        public PlanConfiguration()
+        {
+            ToTable("Plan");
+            HasKey(a => a.PlanId);
+
+            HasRequired(a => a.TipoPlan)
+                .WithMany(a => a.Plan);
+
+        }
     }
 }

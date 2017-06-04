@@ -8,22 +8,19 @@ namespace _2014139821_ENT
 {
     public class Ubigeo
     {
+        public int UbigeoId { get; set; }
+
         public Distrito Distrito { get; set; }
 
         public Provincia Provincia { get; set; }
 
         public Departamento Departamento { get; set; }
 
-        public Ubigeo()
-        {
 
-        }
+        public Direccion Direccion { get; set; }
 
-        public Ubigeo(Distrito distrito, Provincia provincia, Departamento departamento)
-        {
-            Distrito = distrito;
-            Provincia = provincia;
-            Departamento = departamento;
-        }
+        public int DireccionId { get; set; }
+
+               
     }
 }

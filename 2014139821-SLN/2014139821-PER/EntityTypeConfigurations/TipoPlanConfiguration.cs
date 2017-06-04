@@ -10,6 +10,11 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class TipoPlanConfiguration : EntityTypeConfiguration<TipoPlan>
     {
+        public TipoPlanConfiguration()
+        {
+            ToTable("TipoPlan");
+            HasKey(a => a.TipoPlanId);
 
+        }
     }
 }

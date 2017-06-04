@@ -12,9 +12,9 @@ namespace _2014139821_PER.EntityTypeConfigurations
     {
         public TipoPagoConfiguration()
         {
+            ToTable("TipoPago");
+            HasKey(a => a.TipoPagoId);
 
-            //RELACION DE IDA (1 a *)
-            HasMany(a => a.Ventas);
         }
 
     }

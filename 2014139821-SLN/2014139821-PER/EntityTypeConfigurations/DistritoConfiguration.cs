@@ -10,5 +10,14 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class DistritoConfiguration : EntityTypeConfiguration<Distrito>
     {
+        public DistritoConfiguration()
+        {
+            ToTable("Distrito");
+            HasKey(a => a.DistritoId);
+
+            HasRequired(a => a.Provincia)
+                .WithMany(a => a.Distritos)
+                .HasForeignKey(a => a.ProvinciaId);
+        }
     }
 }

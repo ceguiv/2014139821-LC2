@@ -13,15 +13,26 @@ namespace _2014139821_PER.EntityTypeConfigurations
 
         public VentaConfiguration()
         {
-            
-            //Relacion DE VUELTA (1 a *) - TIPO PAGO
-            HasRequired(v => v.TipoPago)
-                .WithMany(g => g.Ventas);
+            ToTable("Venta");
+            HasKey(a => a.VentaId);
 
-            //RELACION DE VUELTA (* a *) - CENTRO ATENCION
-           
+            HasRequired(a => a.CentroAtencion)
+                .WithMany(a => a.Venta);
 
+            HasRequired(a => a.Contrato)
+                .WithRequiredPrincipal(a => a.Venta);
 
+            HasRequired(a => a.TipoPago)
+                .WithMany(a => a.Venta);
+
+            HasRequired(a => a.Cliente)
+                .WithMany(a => a.Venta);
+
+            HasRequired(a => a.Evaluacion)
+                .WithRequiredPrincipal(a => a.Venta);
+
+            HasRequired(a => a.LineaTelefonica)
+                .WithRequiredPrincipal(a => a.Venta);
         }
     }
 }

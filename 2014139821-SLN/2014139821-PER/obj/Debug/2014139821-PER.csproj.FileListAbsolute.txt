@@ -10,3 +10,15 @@ C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-SLN\2014139821
 C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-SLN\2014139821-PER\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-SLN\2014139821-PER\obj\Debug\2014139821-PER.dll
 C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-SLN\2014139821-PER\obj\Debug\2014139821-PER.pdb
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\obj\Debug\2014139821-PER.csprojResolveAssemblyReference.cache
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\obj\Debug\2014139821-PER.dll
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\obj\Debug\2014139821-PER.pdb
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\2014139821-PER.dll.config
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\2014139821-PER.dll
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\2014139821-PER.pdb
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\2014139821-ENT.dll
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\EntityFramework.dll
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\2014139821-ENT.pdb
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\EntityFramework.xml
+C:\Users\ADVANCE\Documents\Visual Studio 2017\Projects\2014139821-LC2\2014139821-SLN\2014139821-PER\bin\Debug\EntityFramework.SqlServer.xml

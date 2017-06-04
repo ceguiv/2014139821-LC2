@@ -10,5 +10,11 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class AdministradorEquipoConfiguration : EntityTypeConfiguration<AdministradorEquipo>
     {
+        public AdministradorEquipoConfiguration()
+        {
+            ToTable("AdministradorEquipo");
+            HasKey(a => a.AdministradorEquipoId);
+        }
+
     }
 }

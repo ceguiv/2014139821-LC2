@@ -10,5 +10,21 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class UbigeoConfiguration : EntityTypeConfiguration<Ubigeo>
     {
+        public UbigeoConfiguration()
+        {
+            ToTable("Ubigeo");
+            HasKey(a => a.UbigeoId);
+
+
+            HasRequired(a => a.Provincia)
+                .WithMany(a => a.Ubigeo);
+
+            HasRequired(a => a.Departamento)
+                .WithMany(a => a.Ubigeo);
+
+            HasRequired(a => a.Distrito)
+                .WithMany(a => a.Ubigeo);
+
+        }
     }
 }

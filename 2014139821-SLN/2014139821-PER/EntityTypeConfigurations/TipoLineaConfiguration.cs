@@ -10,5 +10,13 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class TipoLineaConfiguration : EntityTypeConfiguration<TipoLinea>
     {
+
+        public TipoLineaConfiguration()
+        {
+            ToTable("TipoLinea");
+            HasKey(a => a.TipoLineaId);
+
+
+        }
     }
 }

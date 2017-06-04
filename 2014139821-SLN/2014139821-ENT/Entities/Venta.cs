@@ -8,31 +8,24 @@ namespace _2014139821_ENT
 {
     public class Venta
     {
-        public Contrato Contrato { get; set; }
-
-        public TipoPago TipoPago { get; set; }
+        public int VentaId { get; set; }
 
         public Cliente Cliente { get; set; }
 
-        public Evaluacion Evaluacion { get; set; }
+        public TipoPago TipoPago { get; set; }
 
-        public CentroAtencion CentroAtencion { get; set; }
+        public Contrato Contrato { get; set; }
+
+        public Evaluacion Evaluacion { get; set; }
 
         public LineaTelefonica LineaTelefonica { get; set; }
 
+        public CentroAtencion CentroAtencion { get; set; }
+        public int CentroAtencionId { get; set; }
+
         public Venta()
         {
-            Evaluacion = new Evaluacion();
-            Contrato = new Contrato();
-            TipoPago = new TipoPago();
-            LineaTelefonica = new LineaTelefonica();
 
-        }
-
-        public Venta(Cliente cliente, CentroAtencion centroAtencion)
-        {
-            Cliente = cliente;
-            CentroAtencion = centroAtencion;
         }
     }
 }

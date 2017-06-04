@@ -10,5 +10,11 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class ClienteConfiguration : EntityTypeConfiguration<Cliente>
     {
+        public ClienteConfiguration()
+        {
+            ToTable("Cliente");
+            HasKey(a => a.ClienteId);
+
+        }
     }
 }

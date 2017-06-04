@@ -10,5 +10,11 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class EstadoEvaluacionConfiguration : EntityTypeConfiguration<EstadoEvaluacion>
     {
+        public EstadoEvaluacionConfiguration()
+        {
+            ToTable("EstadoEvaluacion");
+            HasKey(a => a.EstadoEvaluacionId);
+
+        }
     }
 }

@@ -8,11 +8,12 @@ namespace _2014139821_ENT
 {
     public class Trabajador
     {
+        public int TrabajadorId { get; set; }
+
         public TipoTrabajador TipoTrabajador { get; set; }
 
-        public Trabajador()
-        {
-            TipoTrabajador = new TipoTrabajador();
-        }
+
+        public ICollection<Evaluacion> Evaluacion { get; set; }
+        public int EvaluacionID { get; set; }
     }
 }

@@ -10,5 +10,11 @@ namespace _2014139821_PER.EntityTypeConfigurations
 {
     public class TipoTrabajadorConfiguration : EntityTypeConfiguration<TipoTrabajador>
     {
+        public TipoTrabajadorConfiguration()
+        {
+            ToTable("TipoTrabajador");
+            HasKey(a => a.TipoTrabajadorId);
+
+        }
     }
 }

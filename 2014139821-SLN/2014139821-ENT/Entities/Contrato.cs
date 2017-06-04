@@ -8,5 +8,15 @@ namespace _2014139821_ENT
 {
     public class Contrato
     {
+        public int ContratoId { get; set; }
+
+        public Venta Venta { get; set; }
+        public int VentaId { get; set; }
+
+        public Contrato()
+        {
+
+
+        }
     }
 }
