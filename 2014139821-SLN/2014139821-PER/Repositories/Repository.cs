@@ -5,54 +5,59 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Linq.Expressions;
+using _2014139821_PER;
+using System.Data.Entity;
 
 namespace _2014139821_PER.Repositories
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        void IRepository<TEntity>.add(TEntity entity)
+        private readonly DbContext _Context;
+
+
+        public Repository(DbContext context)
         {
-            throw new NotImplementedException();
+            _Context = context;
         }
 
-        void IRepository<TEntity>.addRange(IEnumerable<TEntity> entities)
+        public IQueryable<TEntity> GetEntity()
         {
-            throw new NotImplementedException();
+            return _Context.Set<TEntity>();
         }
 
-        void IRepository<TEntity>.Delete(TEntity entity)
+        public void Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            _Context.Set<TEntity>().Add(entity);
         }
 
-        void IRepository<TEntity>.DeleteRange(IEnumerable<TEntity> entities)
+        public void AddRange(IEnumerable<TEntity> entities)
         {
-            throw new NotImplementedException();
+            _Context.Set<TEntity>().AddRange(entities);
         }
 
-        IEnumerator<TEntity> IRepository<TEntity>.Find(Expression<Func<TEntity, bool>> predicate)
+        public IEnumerable<TEntity> Find(Expression<Func<TEntity, bool>> predicate)
         {
-            throw new NotImplementedException();
+            return _Context.Set<TEntity>().Where(predicate);
         }
 
-        TEntity IRepository<TEntity>.Get(int id)
+        public TEntity Get(int? id)
         {
-            throw new NotImplementedException();
+            return _Context.Set<TEntity>().Find(id);
         }
 
-        IEnumerable<TEntity> IRepository<TEntity>.GetAll()
+        public IEnumerable<TEntity> GetAll()
         {
-            throw new NotImplementedException();
+            return _Context.Set<TEntity>().ToList();
         }
 
-        void IRepository<TEntity>.Update(TEntity entity)
+        public void Remove(TEntity entity)
         {
-            throw new NotImplementedException();
+            _Context.Set<TEntity>().Remove(entity);
         }
 
-        void IRepository<TEntity>.UpdateRange(IEnumerable<TEntity> entities)
+        public void RemoveRange(IEnumerable<TEntity> entities)
         {
-            throw new NotImplementedException();
+            _Context.Set<TEntity>().RemoveRange(entities);
         }
     }
 }

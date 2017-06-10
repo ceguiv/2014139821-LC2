@@ -10,14 +10,7 @@ namespace _2014139821_PER.Repositories
 {
     public class EvaluacionRepository : Repository<Evaluacion>, IEvaluacionRepository
     {
-        private readonly _2014139821_DbContext _context;
-
-        public EvaluacionRepository(_2014139821_DbContext context)
-        {
-            _context = context;
-        }
-
-        private EvaluacionRepository()
+        public EvaluacionRepository(_2014139821_DbContext context):base(context)
         {
 
         }

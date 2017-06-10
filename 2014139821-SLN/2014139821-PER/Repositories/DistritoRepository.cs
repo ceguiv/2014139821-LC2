@@ -10,14 +10,7 @@ namespace _2014139821_PER.Repositories
 {
     public class DistritoRepository : Repository<Distrito>, IDistritoRepository
     {
-        private readonly _2014139821_DbContext _context;
-
-        public DistritoRepository(_2014139821_DbContext context)
-        {
-            _context = context;
-        }
-
-        private DistritoRepository()
+        public DistritoRepository(_2014139821_DbContext context):base(context)
         {
 
         }

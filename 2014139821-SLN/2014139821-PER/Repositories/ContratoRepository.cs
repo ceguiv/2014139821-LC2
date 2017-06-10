@@ -10,14 +10,7 @@ namespace _2014139821_PER.Repositories
 {
     public class ContratoRepository : Repository<Contrato>, IContratoRepository
     {
-        private readonly _2014139821_DbContext _context;
-
-        public ContratoRepository(_2014139821_DbContext context)
-        {
-            _context = context;
-        }
-
-        private ContratoRepository()
+        public ContratoRepository(_2014139821_DbContext context):base(context)
         {
 
         }

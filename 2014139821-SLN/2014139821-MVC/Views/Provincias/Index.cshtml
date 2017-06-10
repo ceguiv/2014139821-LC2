@@ -1,0 +1,46 @@
+﻿@model IEnumerable<_2014139821_ENT.Provincia>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Departamento.DepartamentoId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CadenaUbigeo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UbigeoId)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Departamento.DepartamentoId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CadenaUbigeo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UbigeoId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ProvinciaId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ProvinciaId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ProvinciaId })
+        </td>
+    </tr>
+}
+
+</table>

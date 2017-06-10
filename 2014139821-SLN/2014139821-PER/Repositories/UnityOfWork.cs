@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using _2014139821_PER;
 
 namespace _2014139821_PER.Repositories
 {
@@ -57,11 +58,16 @@ namespace _2014139821_PER.Repositories
 
         public IVentaRepository Ventas { get; private set; }
 
-        private UnityOfWork()
+        public UnityOfWork()
+        {
+
+        }
+
+        public UnityOfWork(_2014139821_DbContext context)
         {
 
             //Contexto para la BD
-            _Context = new _2014139821_DbContext();
+            _Context = context;
 
             AdministradorEquipos = new AdministradorEquipoRepository(_Context);
             AdministradorLineas = new AdministradorLineaRepository(_Context);
@@ -87,8 +93,9 @@ namespace _2014139821_PER.Repositories
             Ventas = new VentaRepository(_Context);
         }
 
+        
 
-        public static UnityOfWork intance
+        public static UnityOfWork Instance
         {
             get
             {
@@ -111,6 +118,11 @@ namespace _2014139821_PER.Repositories
         public int SaveChanges()
         {
             return _Context.SaveChanges();
+        }
+
+        public void StateModified(object Entity)
+        {
+            _Context.Entry(Entity).State = System.Data.Entity.EntityState.Modified;
         }
     }
 }

@@ -8,5 +8,6 @@ namespace _2014139821_ENT.IRepositories
 {
     public interface IAdministradorEquipoRepository : IRepository<AdministradorEquipo>
     {
+      
     }
 }

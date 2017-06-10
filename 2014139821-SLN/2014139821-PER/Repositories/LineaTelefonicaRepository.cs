@@ -10,14 +10,7 @@ namespace _2014139821_PER.Repositories
 {
     public class LineaTelefonicaRepository : Repository<LineaTelefonica>, ILineaTelefonicaRepository
     {
-        private readonly _2014139821_DbContext _context;
-
-        public LineaTelefonicaRepository(_2014139821_DbContext context)
-        {
-            _context = context;
-        }
-
-        private LineaTelefonicaRepository()
+        public LineaTelefonicaRepository(_2014139821_DbContext context):base(context)
         {
 
         }

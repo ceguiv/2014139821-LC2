@@ -10,14 +10,7 @@ namespace _2014139821_PER.Repositories
 {
     public class UbigeoRepository : Repository<Ubigeo>, IUbigeoRepository
     {
-        private readonly _2014139821_DbContext _context;
-
-        public UbigeoRepository(_2014139821_DbContext context)
-        {
-            _context = context;
-        }
-
-        private UbigeoRepository()
+        public UbigeoRepository(_2014139821_DbContext context):base(context)
         {
 
         }

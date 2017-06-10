@@ -10,14 +10,7 @@ namespace _2014139821_PER.Repositories
 {
     public class TipoTrabajadorRepository : Repository<TipoTrabajador>, ITipoTrabajadorRepository
     {
-        private readonly _2014139821_DbContext _context;
-
-        public TipoTrabajadorRepository(_2014139821_DbContext context)
-        {
-            _context = context;
-        }
-
-        private TipoTrabajadorRepository()
+        public TipoTrabajadorRepository(_2014139821_DbContext context):base(context)
         {
 
         }

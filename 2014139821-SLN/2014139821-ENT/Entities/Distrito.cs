@@ -17,6 +17,7 @@ namespace _2014139821_ENT
 
 
         public ICollection<Ubigeo> Ubigeo { get; set; }
+
         public int UbigeoId { get; set; }
 
         public Distrito()

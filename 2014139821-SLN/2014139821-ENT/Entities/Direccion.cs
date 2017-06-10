@@ -10,16 +10,10 @@ namespace _2014139821_ENT
     {
         public int DireccionId { get; set; }
 
-
-        public string CadenaUbigeo { get; set; }
-
         public CentroAtencion CentroAtencion { get; set; }
 
         public int CentroAtencionId { get; set; }
-
-        public Distrito Distrito { get; set; }
-        public int DistritoId { get; set; }
-
+        
         public Ubigeo Ubigeo { get; set; }
     }
 }

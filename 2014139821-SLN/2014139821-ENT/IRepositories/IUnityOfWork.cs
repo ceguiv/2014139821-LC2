@@ -34,5 +34,7 @@ namespace _2014139821_ENT.IRepositories
 
         //Guardar los cambios en la BD
         int SaveChanges();
+
+        void StateModified(object entity);
     }
 }
